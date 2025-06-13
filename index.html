@@ -66,14 +66,26 @@
 
     #player-musica {
       position: fixed;
-      bottom: 20px;
-      right: 20px;
+      top: 10px;
+      right: 10px;
       z-index: 1000;
       background-color: #fff0f0;
       border: 2px solid #ff99aa;
-      border-radius: 10px;
+      border-radius: 50%;
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       padding: 5px;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #player-musica audio {
+      width: 30px;
+      height: 30px;
+      background: transparent;
+      border: none;
     }
 
     footer {
@@ -212,18 +224,18 @@
 
       <div id="surprise" class="mt-4" style="display: none;">
         <h3>Luana, você é o amor da minha vida! 💘</h3>
-        <p>"Você não é apenas uma escolha, é minha ÚNICA escola." — Grey's Anatomy</p>
+        <p>"Você não foi apenas uma escolha. Você é a ÚNICA escolha." — Grey's Anatomy</p>
         <p>Com você, cada momento é mágico. Te amo para sempre! ❤</p>
       </div>
     </main>
 
     <footer>
-      <p>"Do acaso ao para sempre, nosso amor encontrou o caminho."</p>
+      <p>"Do acaso ao para sempre, nosso amor encontrou o caminho um no outro."</p>
     </footer>
   </div>
 
   <div id="player-musica">
-    <audio id="musica" controls>
+    <audio id="musica" preload="auto">
       <source src="Nos_Combina.mp3" type="audio/mpeg">
       Seu navegador não suporta áudio.
     </audio>

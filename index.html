@@ -69,23 +69,24 @@
       top: 10px;
       right: 10px;
       z-index: 1000;
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+    }
+
+    #player-musica button {
       background-color: #fff0f0;
       border: 2px solid #ff99aa;
       border-radius: 50%;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      padding: 5px;
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
       display: flex;
       align-items: center;
       justify-content: center;
-    }
-
-    #player-musica audio {
-      width: 50px;
-      height: 50px;
-      background: transparent;
-      border: none;
+      font-size: 24px;
+      color: #8b0000;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      cursor: pointer;
     }
 
     footer {
@@ -130,89 +131,71 @@
 
     <main class="container my-5 text-center">
       <h2 class="mb-4">Nossos Momentos</h2>
-
-      <!-- Carrossel -->
       <div id="carouselFotos" class="carousel slide mb-4" data-bs-ride="carousel">
         <div class="carousel-inner">
-
-          <div class="carousel-item active">
-            <div class="foto-moldura">
-              <img src="G&L (1).jpg" class="d-block w-100">
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="frase-box">"Você é a minha pessoa."</div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="foto-moldura">
-              <img src="G&L (2).jpg" class="d-block w-100">
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="frase-box">"Escolher você foi a decisão mais fácil da minha vida."</div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="foto-moldura">
-              <img src="G&L (3).jpg" class="d-block w-100">
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="frase-box">"É você. Sempre foi você."</div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="foto-moldura">
-              <img src="G&L (4).jpg" class="d-block w-100">
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="frase-box">"Mesmo nos meus dias mais difíceis, eu ainda escolheria você."</div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="foto-moldura">
-              <img src="G&L (5).jpg" class="d-block w-100">
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="frase-box">"O mundo pode desabar, mas enquanto você estiver comigo, eu fico em pé."</div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="foto-moldura">
-              <img src="G&L (6).jpg" class="d-block w-100">
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="frase-box">"A história mais importante é a que estamos escrevendo hoje."</div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="foto-moldura">
-              <img src="G&L (7).jpg" class="d-block w-100">
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="frase-box">"Se eu tiver que escolher entre salvar o mundo e te amar, vou escolher você."</div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="foto-moldura">
-              <img src="G&L (8).jpg" class="d-block w-100">
-            </div>
-          </div>
-
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFotos" data-bs-slide="prev">
+  <div class="carousel-item active">
+    <div class="foto-moldura">
+      <img src="G&L (1).jpg" class="d-block w-100">
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="frase-box">"Você é a minha pessoa."</div>
+  </div>
+  <div class="carousel-item">
+    <div class="foto-moldura">
+      <img src="G&L (2).jpg" class="d-block w-100">
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="frase-box">"Escolher você foi a decisão mais fácil da minha vida."</div>
+  </div>
+  <div class="carousel-item">
+    <div class="foto-moldura">
+      <img src="G&L (3).jpg" class="d-block w-100">
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="frase-box">"É você. Sempre foi você."</div>
+  </div>
+  <div class="carousel-item">
+    <div class="foto-moldura">
+      <img src="G&L (4).jpg" class="d-block w-100">
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="frase-box">"Mesmo nos meus dias mais difíceis, eu ainda escolheria você."</div>
+  </div>
+  <div class="carousel-item">
+    <div class="foto-moldura">
+      <img src="G&L (5).jpg" class="d-block w-100">
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="frase-box">"O mundo pode desabar, mas enquanto você estiver comigo, eu fico em pé."</div>
+  </div>
+  <div class="carousel-item">
+    <div class="foto-moldura">
+      <img src="G&L (6).jpg" class="d-block w-100">
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="frase-box">"A história mais importante é a que estamos escrevendo hoje."</div>
+  </div>
+  <div class="carousel-item">
+    <div class="foto-moldura">
+      <img src="G&L (7).jpg" class="d-block w-100">
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="frase-box">"Se eu tiver que escolher entre salvar o mundo e te amar, vou escolher você."</div>
+  </div>
+  <div class="carousel-item">
+    <div class="foto-moldura">
+      <img src="G&L (8).jpg" class="d-block w-100">
+    </div>
+  </div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselFotos" data-bs-slide="prev">
           <span class="carousel-control-prev-icon"></span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselFotos" data-bs-slide="next">
@@ -234,10 +217,11 @@
     </footer>
   </div>
 
+  <!-- Botão de música -->
   <div id="player-musica">
+    <button onclick="alternarMusica()" id="botaoMusica">▶️</button>
     <audio id="musica" preload="auto">
       <source src="Nos_Combina.mp3" type="audio/mpeg">
-      Seu navegador não suporta áudio.
     </audio>
   </div>
 
@@ -247,9 +231,23 @@
       document.getElementById('entrada').style.display = 'none';
       document.getElementById('site').style.display = 'block';
       const musica = document.getElementById('musica');
-      musica.play().catch(() => {
+      musica.play().then(() => {
+        document.getElementById('botaoMusica').textContent = '⏸️';
+      }).catch(() => {
         alert("Clique no botão de play da música se ela não iniciar automaticamente.");
       });
+    }
+
+    function alternarMusica() {
+      const musica = document.getElementById('musica');
+      const botao = document.getElementById('botaoMusica');
+      if (musica.paused) {
+        musica.play();
+        botao.textContent = '⏸️';
+      } else {
+        musica.pause();
+        botao.textContent = '▶️';
+      }
     }
 
     function showSurprise() {
